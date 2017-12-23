@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="./main.css">
+	</head>
+	<body>
+		<nav id="menu">
+			<ul id="menuItem">
+				<li><a href="#install" draggable="false">インストール</a></li>
+				<li><a href="#setting" draggable="false">設定</a></li>
+				<li><a href="#about" draggable="false">About</a></li>
+			</ul>
+		</nav>
+
+		<section id="install">
+			<div id="install-usage">
+				<h2>対象のエリアをクリックするかインストールしたいファイルをドロップしてね(*'ω'*)</h2>
+			</div>
+
+			<div class="row">
+				<div class="col">
+					<div id="elemapInstall" class="dropArea">
+						<h3>ブラシ形状 先端形状(elemap / bristle)</h3>
+					</div>
+				</div>
+
+				<div class="col">
+					<div id="blotmapInstall" class="dropArea">
+						<h3>ブラシ形状 にじみ方(blotmap)</h3>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col">
+					<div id="brushtexInstall" class="dropArea">
+						<h3>ブラシテクスチャ(brushtex)</h3>
+					</div>
+				</div>
+
+				<div class="col">
+					<div id="papertexInstall" class="dropArea">
+						<h3>用紙質感(papertex)</h3>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="setting">
+			<div id="saiDir">
+				<h2 id="saiDirLabel">SAIインストールフォルダ</h2>
+				<div id="saiDirPathArea">
+					<p id="saiDirPath" class="line-text-box enable-select"></p>
+					<p id="saiDirSelect" class="button">変更</p>
+				</div>
+			</div>
+
+			<div id="same-name-process">
+				<h2>同名ファイルが既にインストールされている場合の処理方法</h2>
+				<div id="sameNameArea">
+					<select id="sameName">
+						<option value="ask">上書きするか確認</option>
+						<option value="overwrite">常に上書きインストール</option>
+						<option value="skip">常にスキップ</option>
+					</select>
+				</div>
+			</div>
+		</section>
+
+		<section id="about">
+			<div id="logo"><img src="icon.png" draggable="false"></div>
+			<h2 id="appName"></h2>
+			<h3 id="appLink">
+				<a id="repository" draggable="false">リポジトリ</a>
+				<a id="license" draggable="false">ライセンス</a>
+				<a id="release_note" draggable="false">リリースノート</a>
+				<a href="https://twitter.com/Kagua_CJ" draggable="false">作者Twitter</a>
+			</h3>
+			<h4 id="copyright"></h4>
+		</section>
+
+		<script>
+			// You can also require other files to run in this process
+			require('./renderer.js')
+		</script>
+	</body>
+</html>

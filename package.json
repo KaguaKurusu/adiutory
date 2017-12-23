@@ -1,0 +1,31 @@
+{
+  "name": "Adiutory",
+  "version": "1.0.0",
+  "description": "ペイントツールSAIの筆などの素材管理用ツール。",
+  "main": "main.js",
+  "scripts": {
+    "start": "npm run copy && electron tmp/",
+    "copy": "node copy.js",
+    "clean": "node clean.js",
+    "build": "npm run copy && node build.js",
+    "run": "electron tmp/"
+  },
+  "repository": "http://github.com/KaguaKurusu/adiutory",
+  "keywords": [
+    "SAI",
+    "Tool",
+	"Adiutory"
+  ],
+  "author": "来栖華紅鴉",
+  "license": "MIT",
+  "devDependencies": {
+    "devtron": "1.4.0",
+    "electron": "1.7.9",
+    "electron-packager": "9.1.0"
+  },
+  "dependencies": {
+    "electron-config": "1.0.0",
+    "fs-extra": "4.0.2",
+    "iconv-lite": "0.4.19"
+  }
+}
